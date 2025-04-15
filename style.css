@@ -1,0 +1,244 @@
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #1a1a2e;
+      color: #fff;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      background-color: #16213e;
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #e94560;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    nav ul li a:hover {
+      color: #e94560;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #aaa;
+      margin: 10px 0;
+    }
+
+    .hero-buttons {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .hero-buttons button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hero-buttons .work-btn {
+      background-color: #e94560;
+      color: white;
+    }
+
+    .hero-buttons .resume-btn {
+      background: transparent;
+      border: 2px solid #e94560;
+      color: #e94560;
+    }
+
+    .hero-buttons .work-btn:hover {
+      background-color: #ff6b81;
+    }
+
+    .hero-buttons .resume-btn:hover {
+      background-color: #e94560;
+      color: white;
+    }
+
+    section {
+      padding: 60px 10%;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      color: #e94560;
+      margin-bottom: 20px;
+    }
+
+    .content-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+	
+	.box {
+  background-color: #0f3460;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-boxes .box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(233, 69, 96, 0.4);
+}
+
+    .box h3 {
+      color: #e94560;
+      margin-bottom: 10px;
+    }
+	.cursor {
+  display: inline-block;
+  color: #e94560;
+  font-weight: bold;
+  animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+
+    .box ul {
+      padding-left: 0;
+      list-style: none;
+      color: #ccc;
+      font-size: 14px;
+    }
+
+    .project-box {
+      background-color: #1a2e4e;
+      padding: 20px;
+      border-radius: 10px;
+      width: 280px;
+      transition: 0.3s;
+    }
+
+    .project-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(233, 69, 96, 0.4);
+    }
+
+    .project-box h3 {
+      color: #e94559;
+    }
+
+    .project-box p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .contact-info p {
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .contact-info i {
+      color: #e94560;
+      margin-right: 8px;
+    }
+
+    form {
+      background-color: #1a1a2e;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: 30px auto 0;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: inherit;
+    }
+
+    form button {
+      background-color: #e94560;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    form button:hover {
+      background-color: #ff6b81;
+    }
+	body.light-mode {
+  background-color: #fdfdfd;
+  color: #1a1a2e;
+}
+
+body.light-mode header,
+body.light-mode .box,
+body.light-mode .project-box,
+body.light-mode form {
+  background-color: #f0f0f0;
+  color: #1a1a2e;
+}
+
+body.light-mode a {
+  color: #e94560;
+}
+
+body.light-mode .logo,
+body.light-mode h2,
+body.light-mode h3 {
+  color: #e94560;
+}
+
+  </style>
